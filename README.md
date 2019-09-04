@@ -36,3 +36,7 @@ The application is dependent upon its commands:
 The first step was creating a variable to store the commands you can make to LIRI. It was named **liriCommand**, and stored **process.argv[2]**, which is the next entry after the node path and path to the Javascript file being executed within the command line. The second step was creating a variable to store the prospective queries users made. It was named **userQuery** and stored **process.argv.slice(3).join(" ")**, which is every individual entry made after the LIRI-command entry, joined together into a string for the various API calls to be made. After the variables for the LIRI-command(s) and user queries were established, a series of **if statements/ conditionals** were coded, in which the liriCommand variable had to be of equal value and equal type to one of the four LIRI commands before it could run the functions that powered each LIRI command. Within these functions, axios and spotify requests were made via the corresponding queries typed into the command line. 
 
 ## INSTRUCTIONS FOR USE
+To use LIRI, first ensure you have it cloned to your local machine. After it is on your machine, follow this simple process:
+1. Item 1
+1. Item 2
+1. Item 3 
