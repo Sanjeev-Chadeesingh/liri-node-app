@@ -25,12 +25,14 @@ The first organizational step entailed requiring the correct packages and files 
 * **.gitignore** - This file holds several files, and tells git not to track them (node_modules, .DS_store, .env).
 * **package-lock.json** - This is an automatically generated file. It stores the specific versions of dependencies in a tree-format. 
 
-## COMMANDS:
+### COMMANDS:
 The application is dependent upon its commands:
 * concert-this
 * spotify-this-song
 * movie-this
 * do-what-it-says
 
-## CODING + PROGRAMMING:
-The first step was creating a variable to store the commands you can make to LIRI. It was named **liriCommand**, and stored **process.argv[2]**, which is the next entry after the node path and path to the Javascript file being executed within the command line. The second step was creating a variable to store the prospective queries users made. It was named **userQuery** and stored **process.argv.slice(3).join(" ")**, which is every individual entry made after the LIRI-command entry, joined together into a string for the various API calls to be made. After the variables for the LIRI-command(s) and user queries were established, a series of **if statements/ conditionals** were coded, in which the liriCommand variable had to be of equal value and equal type to one of the four LIRI commands before it could run the functions that powered each LIRI command. Within these functions, axios and spotify requests are made via the corresponding queries typed into command line. 
+### CODING + PROGRAMMING:
+The first step was creating a variable to store the commands you can make to LIRI. It was named **liriCommand**, and stored **process.argv[2]**, which is the next entry after the node path and path to the Javascript file being executed within the command line. The second step was creating a variable to store the prospective queries users made. It was named **userQuery** and stored **process.argv.slice(3).join(" ")**, which is every individual entry made after the LIRI-command entry, joined together into a string for the various API calls to be made. After the variables for the LIRI-command(s) and user queries were established, a series of **if statements/ conditionals** were coded, in which the liriCommand variable had to be of equal value and equal type to one of the four LIRI commands before it could run the functions that powered each LIRI command. Within these functions, axios and spotify requests were made via the corresponding queries typed into the command line. 
+
+## INSTRUCTIONS FOR USE
