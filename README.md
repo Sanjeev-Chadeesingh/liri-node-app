@@ -10,13 +10,13 @@ The first organizational step entailed requiring the correct packages and files 
 
 ### PACKAGES:
 * **axios** - This is the main package, it delivers requests and responses for information. 
-* **Spotify** - This package handles the spotify-this-song LIRI commands.
+* **Spotify** - This package handles the **spotify-this-song** LIRI commands.
 * **moment** - This package reformats the dates of an artist's tour into MM/DD/YYYY
-* **fs** - This package executes the do-what-it-says LIRI command, via using a text file to call other LIRI commands.  
+* **fs** - This package executes the **do-what-it-says** LIRI command, via using a text file to call other LIRI commands.  
 * **dotenv** - This package keeps the developer's (me) API key information private.
 
 ### FILES:
-* **keys** - This is a Javascript file. It holds the SPOTIFY identification and secret as stored values, both of which are required to use the node-spotify-api.
+* **keys** - This is a Javascript file. It holds the SPOTIFY identification and secret as stored values, both of which are required to use the **node-spotify-api**.
 * **env** - This file is where the actual SPOTIFY identification and secret are stored.
 * **liri.js** - This is a Javascript file, and it is the main file of the application. All of the logic, API calls, requests and responses are in the code within this file.
 * **random.txt** - This text file stores a default song ("I Want It That Way"), and is used alongside the do-what-it-says LIRI command.
@@ -37,13 +37,13 @@ The first step was creating a variable to store the commands you can make to LIR
 
 ## INSTRUCTIONS FOR USE
 To use LIRI, first ensure you have it cloned to your local machine. After it is on your machine, follow this simple process:
-1. type node *liri.js* into the command line
+1. type *node liri.js* into the command line
 1. type one of these four commands into the command line
     1. *concert-this*
     1. *spotify-this-song*
     1. *movie-this*
     1. *do-what-it-says*
-1. type whichever movie, artist or song (depending on which command you wish to use) afterward your command, and press enter. LIRI will fetch the necessary information.
+1. type whichever movie, artist or song (depending on which command you wish to use) after your command, and press enter. LIRI will fetch the necessary information.
 1. Below is an example using the concert-this command:
     1. **node liri.js concert-this Eminem**
 
