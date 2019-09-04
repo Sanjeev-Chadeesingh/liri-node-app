@@ -33,10 +33,16 @@ The application is dependent upon its commands:
 * do-what-it-says
 
 ### CODING + PROGRAMMING:
-The first step was creating a variable to store the commands you can make to LIRI. It was named **liriCommand**, and stored **process.argv[2]**, which is the next entry after the node path and path to the Javascript file being executed within the command line. The second step was creating a variable to store the prospective queries users made. It was named **userQuery** and stored **process.argv.slice(3).join(" ")**, which is every individual entry made after the LIRI-command entry, joined together into a string for the various API calls to be made. After the variables for the LIRI-command(s) and user queries were established, a series of **if statements/ conditionals** were coded, in which the liriCommand variable had to be of equal value and equal type to one of the four LIRI commands before it could run the functions that powered each LIRI command. Within these functions, axios and spotify requests were made via the corresponding queries typed into the command line. 
+The first step was creating a variable to store the commands you can make to LIRI. It was named **liriCommand**, and stored **process.argv[2]**, which is the next entry after the node path and path to the Javascript file being executed within the command line. The second step was creating a variable to store the prospective queries users made. It was named **userQuery** and stored **process.argv.slice(3).join(" ")**, which is every individual entry made after the LIRI-command entry, joined together into a string for the various API calls to be made. After the variables for the LIRI-command(s) and user queries were established, a series of **if statements/ conditionals** were coded, in which the liriCommand variable had to be of equal value and equal type to one of the four LIRI commands before it could run the functions that powered each LIRI command. Within these functions, axios and spotify requests were made via the corresponding queries typed into the command line. Error statments were reformatted in situations that weren't true errors, such as a band not being on tour when using axios to call the Bands In Town API. The error was reformatted in this case to instead let the user know that the artist they selected was not touring, and it then asked them to search for a different artist instead. 
 
 ## INSTRUCTIONS FOR USE
 To use LIRI, first ensure you have it cloned to your local machine. After it is on your machine, follow this simple process:
-1. Item 1
-1. Item 2
-1. Item 3 
+1. type node *liri.js* into the command line
+1. type one of these four commands into the command line
+    1. *concert-this*
+    1. *spotify-this-song*
+    1. *movie-this*
+    1. *do-what-it-says*
+1. type whichever movie, artist or song (depending on which command you wish to use) afterward your command, and press enter. LIRI will fetch the necessary information.
+1. Below is an example using the concert-this command:
+    1. **node liri.js concert-this Eminem**
