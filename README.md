@@ -19,7 +19,7 @@ The first organizational step entailed requiring the correct packages and files 
 * **keys** - This is a Javascript file. It holds the SPOTIFY identification and secret as stored values, both of which are required to use the **node-spotify-api**.
 * **env** - This file is where the actual SPOTIFY identification and secret are stored.
 * **liri.js** - This is a Javascript file, and it is the main file of the application. All of the logic, API calls, requests and responses are in the code within this file.
-* **random.txt** - This text file stores a default song ("I Want It That Way"), and is used alongside the do-what-it-says LIRI command.
+* **random.txt** - This text file stores a default song ("I Want It That Way"), and is used alongside the **do-what-it-says** LIRI command.
 * **README.md** - This file stores all the information necessary to understand the application.
 * **package.json** - This file is a log of sorts, storing all the necessary dependencies for powering the application.
 * **.gitignore** - This file holds several files, and tells git not to track them (node_modules, .DS_store, .env).
@@ -37,6 +37,8 @@ The first step was creating a variable to store the commands you can make to LIR
 
 ## INSTRUCTIONS FOR USE
 To use LIRI, first ensure you have it cloned to your local machine. After it is on your machine, follow this simple process:
+1. Ensure you have the necessary files and packages, along with API's, that are listed in the **ORGANIZATION** section above.
+1. type *npm install* and press *enter/return*, this loads the necessary files onto your computer.
 1. type *node liri.js* into the command line
 1. type one of these four commands into the command line
     1. *concert-this*
